@@ -10,8 +10,9 @@ This web app is supposed to solve my problem of never knowing what to cook by pr
 	* Add a weekcalender where you can choose a recipe\day or have a random week menu created according to some prefereces you enter 
 	* Convert the generated\hand picked week menu into a shopping list where you can add extra items afterwards to complete it.
 	* Add events to the calendar that influence the coise of the menue (ex. volleybal training means cook for two days the day before..)
-	* Nice to have: export the list to a pdf and mail it to yourself
 	* Work with different user accounts and sessions
+	* Share your calendat with someone and/or give someone acces to your calendar
+	* Nice to have: export the list to a pdf and mail it to yourself
 * Technology:
 	* Java 8
 	* MySql db

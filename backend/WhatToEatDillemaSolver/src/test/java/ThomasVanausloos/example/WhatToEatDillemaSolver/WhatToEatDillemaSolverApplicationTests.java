@@ -1,4 +1,4 @@
-package com.thomasvanausloos.WhatToEatDillemaSolver;
+package ThomasVanausloos.example.WhatToEatDillemaSolver;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
