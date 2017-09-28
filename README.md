@@ -41,3 +41,11 @@ This web app is supposed to solve my problem of never knowing what to cook by pr
 ### 19/09/2017:
 * Adding docker container with mysql database (https://github.com/mysql/mysql-docker)
 * Added login-component to frontend
+
+###22/09/2017
+* Added material design to the angular project
+* Started redesigning the login component
+
+###28/09/2017
+* Worked on logging in
+
