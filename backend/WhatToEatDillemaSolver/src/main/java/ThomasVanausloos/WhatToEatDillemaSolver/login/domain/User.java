@@ -4,15 +4,21 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import java.io.Serializable;
+
 import static ThomasVanausloos.WhatToEatDillemaSolver.login.domain.User.TABLE_NAME;
 
 @Entity
 @Table(name = TABLE_NAME)
-public class User {
+public class User implements Serializable {
 
     public static final String TABLE_NAME = "APP_USER";
+    public static final String COLUMN_USERID = "USER_ID";
     public static final String COLUMN_USERNAME = "USERNAME";
     public static final String COLUMN_PASSWORD = "PASSWORD";
+
+    @Column(name = COLUMN_USERID)
+    private String userId;
 
     @Column(name =COLUMN_USERNAME)
     private String userName;
@@ -31,35 +37,28 @@ public class User {
     private User() {
     }
 
-    public static class UserBuilder{
-
-        private User instance;
-        private boolean isAlreadyBuilt = false;
+    public static class UserBuilder extends NestedBuilder<User>{
 
         public static UserBuilder aUser(){
             return new UserBuilder();
         }
-        public UserBuilder(){
-            instance = new User();
+
+        private UserBuilder(){
+        }
+
+        @Override
+        public User createInstance() {
+            return new User();
         }
 
         public UserBuilder withUsername(String username){
-            instance.userName = username;
+            instance().userName = username;
             return this;
         }
 
         public UserBuilder withPassword(String password){
-            instance.password = password;
+            instance().password = password;
             return this;
-        }
-
-        public User build(){
-            if(!isAlreadyBuilt){
-                isAlreadyBuilt = true;
-                return instance;
-            } else {
-                throw new EntityAlreadyBuiltException();
-            }
         }
     }
 

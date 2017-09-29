@@ -15,6 +15,6 @@ public class LoginResource {
     private AppUserService userService;
 
     public void login(User loginDetails){
-
+        return userService.login(loginDetails);
     }
 }
