@@ -42,10 +42,18 @@ This web app is supposed to solve my problem of never knowing what to cook by pr
 * Adding docker container with mysql database (https://github.com/mysql/mysql-docker)
 * Added login-component to frontend
 
-###22/09/2017
+### 22/09/2017
 * Added material design to the angular project
 * Started redesigning the login component
 
-###28/09/2017
+### 28/09/2017
 * Worked on logging in
 
+### 4/10/2017
+* Added todo lists to trello
+* Decided to work with multi-layer Maven modules 
+* Worked on the login flow + added tests
+
+### 5/10/2017
+* Try to get context for integration tests up and running 
+* Updated trello board with more todo's 
