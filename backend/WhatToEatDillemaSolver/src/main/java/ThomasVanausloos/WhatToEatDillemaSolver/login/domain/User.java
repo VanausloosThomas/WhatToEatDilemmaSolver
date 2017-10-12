@@ -1,14 +1,17 @@
 package ThomasVanausloos.WhatToEatDillemaSolver.login.domain;
 
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import java.io.Serializable;
 
 import static ThomasVanausloos.WhatToEatDillemaSolver.login.domain.User.TABLE_NAME;
 
-@Entity
+@Repository
 @Table(name = TABLE_NAME)
 public class User implements Serializable {
 
@@ -17,6 +20,7 @@ public class User implements Serializable {
     public static final String COLUMN_USERNAME = "USERNAME";
     public static final String COLUMN_PASSWORD = "PASSWORD";
 
+    @Id
     @Column(name = COLUMN_USERID)
     private String userId;
 

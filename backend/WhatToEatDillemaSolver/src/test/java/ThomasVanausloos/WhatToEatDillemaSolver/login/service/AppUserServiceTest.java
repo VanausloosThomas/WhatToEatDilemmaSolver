@@ -37,7 +37,7 @@ public class AppUserServiceTest extends AbstractIntegrationTest {
                 .withPassword("Password")
                 .build();
 
-        userRepository.save(user);
+        userRepository.saveUser(user);
 
         assertThat(userService.login(loginCredentials)).isEqualTo(SessionDTO.anInstance().withRoles(newArrayList("ULTIMATE_USER")).withUserName("Username").build());
 

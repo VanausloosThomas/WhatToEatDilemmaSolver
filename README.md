@@ -57,3 +57,15 @@ This web app is supposed to solve my problem of never knowing what to cook by pr
 ### 5/10/2017
 * Try to get context for integration tests up and running 
 * Updated trello board with more todo's 
+
+### 12/10/2017
+* Got integration tests up and running. Missed: 
+```
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<version>1.4.2.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+``` 
+* Fixed connection to docker mysql database (forgot to expose the ports + wrong user and password)
