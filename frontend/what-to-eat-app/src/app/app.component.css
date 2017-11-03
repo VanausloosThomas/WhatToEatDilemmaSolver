@@ -1,6 +1,4 @@
-.footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
+.wte-body{
+  margin-left: 20vw;
+  margin-right: 20vw;
+}

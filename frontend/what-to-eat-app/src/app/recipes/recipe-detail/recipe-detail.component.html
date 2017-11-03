@@ -1,5 +1,5 @@
 <h1>{{recipe.name}}</h1>
 <p>{{recipe.preparationTime}}</p>
-<p>{{recipe.imgUrl}}</p>
+<p>{{recipe.imageUrl}}</p>
 <p>{{recipe.preparation.get(0)}}</p>
-<p>{{recipe.ingredients[0]}}</p>
+<p>{{recipe.ingredients[0].ingredientName + " "+ recipe.ingredients[0].amountPerPerson +" " + recipe.ingredients[0].unit}}</p>

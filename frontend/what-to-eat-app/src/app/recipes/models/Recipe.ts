@@ -14,4 +14,5 @@ export class Recipe{
         this.name = '';
         this.preparation = new Map();    
     }
+
 }
