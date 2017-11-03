@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
-import {MatToolbarModule} from '@angular/material';
+import {MatToolbarModule, MatCardModule, MatTableModule} from '@angular/material';
 
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
@@ -25,7 +25,9 @@ import { RecipePreparationComponent } from './recipes/recipe-preparation/recipe-
   ],
   imports: [
     BrowserModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

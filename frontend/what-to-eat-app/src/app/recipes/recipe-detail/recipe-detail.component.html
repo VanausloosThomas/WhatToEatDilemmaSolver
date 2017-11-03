@@ -1,5 +1,43 @@
-<h1>{{recipe.name}}</h1>
-<p>{{recipe.preparationTime}}</p>
-<p>{{recipe.imageUrl}}</p>
-<p>{{recipe.preparation.get(0)}}</p>
-<p>{{recipe.ingredients[0].ingredientName + " "+ recipe.ingredients[0].amountPerPerson +" " + recipe.ingredients[0].unit}}</p>
+<mat-card class="card-container">
+  <mat-card-title>
+    <h1>{{recipe.name}}</h1>
+    
+  </mat-card-title>
+      <div class="meta-img-container">
+        
+        <div class="metadata">
+          <p>Some extra info about the recepy</p>
+          <p>Blabalalakjjhilhsfsf</p>
+          <p>hafh;ohscjasfjsgpsaj</p>
+          <p>asjfjsajnvoiasijfpffasffasf</p>
+          <p>jkaofhjasfhsahf</p>
+          <p>Preparation time: <b>{{recipe.preparationTime}} minutes</b></p>
+          </div>
+          <div class="img-container">
+            <img mat-card-lg-image [src]="this.getImageUrl()" class="img" >
+            
+          </div>
+          
+        </div>
+        <div class="ingredient-list">
+          <mat-card-content>
+            <table>
+              <tr>
+                <th>Ingredient</th>
+                <th>Amount per person</th>
+                <th>Unit</th>
+              </tr>
+              <tr *ngFor="let ingredient of recipe.ingredients">
+                <td>{{ingredient.ingredientName}}</td>
+                <td>{{ingredient.amountPerPerson}}</td>
+                <td>{{ingredient.unit}}</td>
+              </tr>
+            </table>
+            <p>{{recipe.preparation.get(0)}}</p>
+   </mat-card-content>
+
+
+  </div>
+
+
+</mat-card>

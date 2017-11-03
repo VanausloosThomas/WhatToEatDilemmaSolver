@@ -1,0 +1,37 @@
+.card-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.ingredient-list{
+    width: 40%;
+}
+
+table{
+    width: 100%
+}
+th{
+    text-align: left;
+    font-size: 18px;
+    height: 5vh;
+}
+
+.meta-img-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.meta-data{
+    /* flex-grow: 1; */
+
+    margin-right: 10%;
+}
+
+.img-container{
+    flex-grow: 1;
+    width: 40%;
+}
+.img{
+    width: 50%;
+    margin-left:50%;
+}

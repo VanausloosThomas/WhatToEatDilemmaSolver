@@ -17,10 +17,15 @@ export class RecipeDetailComponent implements OnInit {
     this.recipe.imageUrl = 'http://www.ohmyfoodness.nl/wp-content/uploads/2016/03/babi_pangangfeat.jpg';
     this.recipe.preparation.set(0,'this is step 1');
     this.recipe.ingredients.push(new Ingredient('pork',500,'grams'))
+    this.recipe.ingredients.push(new Ingredient('sause',300,'ml'))
+    this.recipe.ingredients.push(new Ingredient('pineapple',1,'can'))
   }
 
   ngOnInit() {
-    console.log(this.recipe);
+  }
+
+  getImageUrl():string{
+    return this.recipe.imageUrl;
   }
 
 }
