@@ -1,0 +1,11 @@
+.example-fill-remaining-space {
+    flex-grow: 2;
+  }
+
+.title{
+    flex-grow: 6;
+}
+
+.actions{
+    flex-grow: 1;
+}
