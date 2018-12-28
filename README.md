@@ -69,3 +69,13 @@ This web app is supposed to solve my problem of never knowing what to cook by pr
 		</dependency>
 ``` 
 * Fixed connection to docker mysql database (forgot to expose the ports + wrong user and password)
+
+### 26/10/2017
+* Made mockupscreens
+* Made a different trello board for the angula stories
+
+### 28/10/2017
+* Updated angular version on all my laptops so I can swithc between them whenever i want
+
+### 31/10/2017
+* Got accepted for a google scholarship (free html + css course!!!)  
